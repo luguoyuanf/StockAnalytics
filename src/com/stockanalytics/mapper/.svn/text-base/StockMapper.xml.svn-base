@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.stockanalytics.mapper.StockMapper">
+	<!-- 批量更新插入数据 -->
+	<insert id="batchInsertStockIndex" parameterType="java.util.List">
+		replace into stock(
+			id,
+			name,
+			code
+		) values
+		<foreach collection="list" item="stock" index="index" separator=",">
+			(#{stock.id},
+			#{stock.name},
+			#{stock.code})
+			</foreach>
+	</insert>
+	<!-- 更新插入单条股票记录 -->
+	<insert id="insertStockIndex" parameterType="stock">
+		replace into stock(
+			id,
+			name,
+			code
+		) values (
+			#{id},
+			#{name},
+			#{code}
+			)
+	</insert>
+	<!-- 查询所有股票数据 -->
+	<select id="findAllStock" resultType="java.util.List">
+		select 
+			id,
+			name,
+			code
+		from
+			stock
+	</select>
+	
+</mapper>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/project/!svn/ver/9/StockAnalytics/src/com/stockanalytics/service
+END
+StockService.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/service/StockService.java
+END
+StockIndexService.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/service/StockIndexService.java
+END
+StockInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/project/!svn/ver/28/StockAnalytics/src/com/stockanalytics/service/StockInfoService.java
+END

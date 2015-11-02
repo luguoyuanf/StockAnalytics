@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/project/!svn/ver/9/StockAnalytics/conf
+END
+applicationContext-quartz.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/project/!svn/ver/26/StockAnalytics/conf/applicationContext-quartz.xml
+END
+db.properties
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/project/!svn/ver/22/StockAnalytics/conf/db.properties
+END
+common.properties
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/project/!svn/ver/26/StockAnalytics/conf/common.properties
+END
+springmvc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/project/!svn/ver/26/StockAnalytics/conf/springmvc.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/project/!svn/ver/4/StockAnalytics/conf/log4j.properties
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/project/!svn/ver/26/StockAnalytics/conf/applicationContext.xml
+END
+sqlMapConfig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/project/!svn/ver/4/StockAnalytics/conf/sqlMapConfig.xml
+END
+mongodb.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/project/!svn/ver/26/StockAnalytics/conf/mongodb.xml
+END
+mongodb.properties
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/project/!svn/ver/26/StockAnalytics/conf/mongodb.properties
+END

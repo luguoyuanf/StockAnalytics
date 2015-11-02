@@ -1,0 +1,82 @@
+10
+
+dir
+19
+http://tangyun/svn/project/StockAnalytics/src/com/stockanalytics
+http://tangyun/svn/project
+
+
+
+2015-10-20T07:48:22.216523Z
+9
+tangyun
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+adfa326b-67ea-8849-a48c-7fddafa4bb08
+
+bean
+dir
+
+constants
+dir
+
+dao
+dir
+
+http
+dir
+
+mapper
+dir
+
+service
+dir
+
+test
+dir
+
+thread
+dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
+
+timer
+dir
+
+tools
+dir
+
+web
+dir
+

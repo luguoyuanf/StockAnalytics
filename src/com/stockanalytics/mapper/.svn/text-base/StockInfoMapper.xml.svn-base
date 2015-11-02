@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.stockanalytics.mapper.StockInfoMapper">
+	<!-- 批量插入数据 -->
+	<insert id="batchInsertStockInfos" parameterType="java.util.List">
+		replace into stockinfo(
+			id,
+			name,
+			code,
+			cdate,
+			ctime,
+			openningPrice,
+			closingPrice,
+			currentPrice,
+			hPrice,
+			lPrice,
+			competitivePrice,
+			auctionPrice,
+			totalNumber,
+			turnover,
+			buyOne,
+			buyOnePrice,
+			buyTwo,
+			buyTwoPrice,
+			buyThree,
+			buyThreePrice,
+			buyFour,
+			buyFourPrice,
+			buyFive,
+			buyFivePrice,
+			sellOne,
+			sellOnePrice,
+			sellTwo,
+			sellTwoPrice,
+			sellThree,
+			sellThreePrice,
+			sellFour,
+			sellFourPrice,
+			sellFive,
+			sellFivePrice,
+			rate
+		) values
+			<foreach collection="list" item="stockinfo" index="index" separator=",">
+				(#{stockinfo.id},
+				#{stockinfo.name},
+				#{stockinfo.code},
+				#{stockinfo.cdate},
+				#{stockinfo.ctime},
+				#{stockinfo.openningPrice},
+				#{stockinfo.closingPrice},
+				#{stockinfo.currentPrice},
+				#{stockinfo.hPrice},
+				#{stockinfo.lPrice},
+				#{stockinfo.competitivePrice},
+				#{stockinfo.auctionPrice},
+				#{stockinfo.totalNumber},
+				#{stockinfo.turnover},
+				#{stockinfo.buyOne},
+				#{stockinfo.buyOnePrice},
+				#{stockinfo.buyTwo},
+				#{stockinfo.buyTwoPrice},
+				#{stockinfo.buyThree},
+				#{stockinfo.buyThreePrice},
+				#{stockinfo.buyFour},
+				#{stockinfo.buyFourPrice},
+				#{stockinfo.buyFive},
+				#{stockinfo.buyFivePrice},
+				#{stockinfo.sellOne},
+				#{stockinfo.sellOnePrice},
+				#{stockinfo.sellTwo},
+				#{stockinfo.sellTwoPrice},
+				#{stockinfo.sellThree},
+				#{stockinfo.sellThreePrice},
+				#{stockinfo.sellFour},
+				#{stockinfo.sellFourPrice},
+				#{stockinfo.sellFive},
+				#{stockinfo.sellFivePrice},
+				#{stockinfo.rate})
+			</foreach>
+	</insert>
+	
+	<insert id="batchInsertStockInfo" parameterType="java.util.ArrayList">
+		replace into stockinfo(
+			id,
+			name,
+			code,
+			cdate,
+			ctime,
+			openningPrice,
+			closingPrice,
+			currentPrice,
+			hPrice,
+			lPrice,
+			competitivePrice,
+			auctionPrice,
+			totalNumber,
+			turnover,
+			buyOne,
+			buyOnePrice,
+			buyTwo,
+			buyTwoPrice,
+			buyThree,
+			buyThreePrice,
+			buyFour,
+			buyFourPrice,
+			buyFive,
+			buyFivePrice,
+			sellOne,
+			sellOnePrice,
+			sellTwo,
+			sellTwoPrice,
+			sellThree,
+			sellThreePrice,
+			sellFour,
+			sellFourPrice,
+			sellFive,
+			sellFivePrice,
+			rate
+		) values
+			<foreach collection="array" item="stockinfo" index="index" separator=",">
+				(#{stockinfo.id},
+				#{stockinfo.name},
+				#{stockinfo.code},
+				#{stockinfo.cdate},
+				#{stockinfo.ctime},
+				#{stockinfo.openningPrice},
+				#{stockinfo.closingPrice},
+				#{stockinfo.currentPrice},
+				#{stockinfo.hPrice},
+				#{stockinfo.lPrice},
+				#{stockinfo.competitivePrice},
+				#{stockinfo.auctionPrice},
+				#{stockinfo.totalNumber},
+				#{stockinfo.turnover},
+				#{stockinfo.buyOne},
+				#{stockinfo.buyOnePrice},
+				#{stockinfo.buyTwo},
+				#{stockinfo.buyTwoPrice},
+				#{stockinfo.buyThree},
+				#{stockinfo.buyThreePrice},
+				#{stockinfo.buyFour},
+				#{stockinfo.buyFourPrice},
+				#{stockinfo.buyFive},
+				#{stockinfo.buyFivePrice},
+				#{stockinfo.sellOne},
+				#{stockinfo.sellOnePrice},
+				#{stockinfo.sellTwo},
+				#{stockinfo.sellTwoPrice},
+				#{stockinfo.sellThree},
+				#{stockinfo.sellThreePrice},
+				#{stockinfo.sellFour},
+				#{stockinfo.sellFourPrice},
+				#{stockinfo.sellFive},
+				#{stockinfo.sellFivePrice},
+				#{stockinfo.rate})
+			</foreach>
+	</insert>
+	
+	<insert id="insertStockInfo" parameterType="stockInfo">
+		replace into stockinfo(
+			id,
+			name,
+			code,
+			cdate,
+			ctime,
+			openningPrice,
+			closingPrice,
+			currentPrice,
+			hPrice,
+			lPrice,
+			competitivePrice,
+			auctionPrice,
+			totalNumber,
+			turnover,
+			buyOne,
+			buyOnePrice,
+			buyTwo,
+			buyTwoPrice,
+			buyThree,
+			buyThreePrice,
+			buyFour,
+			buyFourPrice,
+			buyFive,
+			buyFivePrice,
+			sellOne,
+			sellOnePrice,
+			sellTwo,
+			sellTwoPrice,
+			sellThree,
+			sellThreePrice,
+			sellFour,
+			sellFourPrice,
+			sellFive,
+			sellFivePrice,
+			rate
+		) values (
+			#{id},
+			#{name},
+			#{code},
+			#{cdate},
+			#{ctime},
+			#{openningPrice},
+			#{closingPrice},
+			#{currentPrice},
+			#{hPrice},
+			#{lPrice},
+			#{competitivePrice},
+			#{auctionPrice},
+			#{totalNumber},
+			#{turnover},
+			#{buyOne},
+			#{buyOnePrice},
+			#{buyTwo},
+			#{buyTwoPrice},
+			#{buyThree},
+			#{buyThreePrice},
+			#{buyFour},
+			#{buyFourPrice},
+			#{buyFive},
+			#{buyFivePrice},
+			#{sellOne},
+			#{sellOnePrice},
+			#{sellTwo},
+			#{sellTwoPrice},
+			#{sellThree},
+			#{sellThreePrice},
+			#{sellFour},
+			#{sellFourPrice},
+			#{sellFive},
+			#{sellFivePrice},
+			#{rate}
+			)
+	</insert>
+	
+	<!-- 通过名字模糊搜索 -->
+	<select id="findStockInfoByName" resultType="stockInfo">
+		select 
+			id,
+			name,
+			code,
+			cdate,
+			ctime,
+			openningPrice,
+			closingPrice,
+			currentPrice,
+			hPrice,
+			lPrice,
+			competitivePrice,
+			auctionPrice,
+			totalNumber,
+			turnover,
+			buyOne,
+			buyOnePrice,
+			buyTwo,
+			buyTwoPrice,
+			buyThree,
+			buyThreePrice,
+			buyFour,
+			buyFourPrice,
+			buyFive,
+			buyFivePrice,
+			sellOne,
+			sellOnePrice,
+			sellTwo,
+			sellTwoPrice,
+			sellThree,
+			sellThreePrice,
+			sellFour,
+			sellFourPrice,
+			sellFive,
+			sellFivePrice,
+			rate 
+		from 
+			stockinfo
+		where
+			name like '%${value}%'
+	</select>
+	
+	<!-- 查询所有数据 -->
+	<select id="findAllStockInfo" resultType="stockInfo">
+		select 
+			id,
+			name,
+			code,
+			cdate,
+			ctime,
+			openningPrice,
+			closingPrice,
+			currentPrice,
+			hPrice,
+			lPrice,
+			competitivePrice,
+			auctionPrice,
+			totalNumber,
+			turnover,
+			buyOne,
+			buyOnePrice,
+			buyTwo,
+			buyTwoPrice,
+			buyThree,
+			buyThreePrice,
+			buyFour,
+			buyFourPrice,
+			buyFive,
+			buyFivePrice,
+			sellOne,
+			sellOnePrice,
+			sellTwo,
+			sellTwoPrice,
+			sellThree,
+			sellThreePrice,
+			sellFour,
+			sellFourPrice,
+			sellFive,
+			sellFivePrice,
+			rate 
+		from 
+			stockinfo
+	</select>
+	
+	<!-- 批量更新 -->
+	<update id="batchUpdateStockInfoRate" parameterType="java.util.List">
+		<foreach collection="list" item="stockinfo" separator=";">
+			update stockinfo set rate = ${stockinfo.rate} where id = '${stockinfo.id}'
+		</foreach>
+	
+		<!-- update stockinfo set rate = case id
+			<foreach collection="list" item="stockinfo" separator=" " close="end">
+				when '${stockinfo.id}' then ${stockinfo.rate} 
+			</foreach>
+		where id in
+		<foreach collection="list" open="(" close=")" separator=",">
+			'${stockinfo.id}'
+		</foreach> -->
+	</update>
+</mapper>

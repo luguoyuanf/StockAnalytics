@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/dao/impl
+END
+StockIndexMongDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/project/!svn/ver/28/StockAnalytics/src/com/stockanalytics/dao/impl/StockIndexMongDaoImpl.java
+END
+UserMongoDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/project/!svn/ver/28/StockAnalytics/src/com/stockanalytics/dao/impl/UserMongoDaoImpl.java
+END
+StockMongoDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/project/!svn/ver/28/StockAnalytics/src/com/stockanalytics/dao/impl/StockMongoDaoImpl.java
+END
+StockInfoMongoDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/project/!svn/ver/28/StockAnalytics/src/com/stockanalytics/dao/impl/StockInfoMongoDaoImpl.java
+END

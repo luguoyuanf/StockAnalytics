@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/project/!svn/ver/5/StockAnalytics/src/com/stockanalytics/bean
+END
+CommonProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/bean/CommonProperties.java
+END
+Market.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/project/!svn/ver/20/StockAnalytics/src/com/stockanalytics/bean/Market.java
+END
+StockIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/bean/StockIndex.java
+END
+XD.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/project/!svn/ver/22/StockAnalytics/src/com/stockanalytics/bean/XD.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/bean/User.java
+END
+RetData.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/project/!svn/ver/20/StockAnalytics/src/com/stockanalytics/bean/RetData.java
+END
+ShangZheng.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/project/!svn/ver/20/StockAnalytics/src/com/stockanalytics/bean/ShangZheng.java
+END
+Stock.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/bean/Stock.java
+END
+StockInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/bean/StockInfo.java
+END
+ShenZheng.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/project/!svn/ver/20/StockAnalytics/src/com/stockanalytics/bean/ShenZheng.java
+END

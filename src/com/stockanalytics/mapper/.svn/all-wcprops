@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/project/!svn/ver/4/StockAnalytics/src/com/stockanalytics/mapper
+END
+StockMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/project/!svn/ver/27/StockAnalytics/src/com/stockanalytics/mapper/StockMapper.xml
+END
+StockIndexMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/project/!svn/ver/20/StockAnalytics/src/com/stockanalytics/mapper/StockIndexMapper.java
+END
+StockIndexMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/mapper/StockIndexMapper.xml
+END
+StockMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/mapper/StockMapper.java
+END
+StockInfoMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/mapper/StockInfoMapper.java
+END
+StockInfoMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/mapper/StockInfoMapper.xml
+END

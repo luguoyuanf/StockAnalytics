@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/project/!svn/ver/9/StockAnalytics/src/com/stockanalytics/test
+END
+DBTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/project/!svn/ver/4/StockAnalytics/src/com/stockanalytics/test/DBTest.java
+END
+UserTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/project/!svn/ver/28/StockAnalytics/src/com/stockanalytics/test/UserTest.java
+END
+QtzTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/project/!svn/ver/4/StockAnalytics/src/com/stockanalytics/test/QtzTest.java
+END
+IOTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/test/IOTest.java
+END
+StockTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/project/!svn/ver/28/StockAnalytics/src/com/stockanalytics/test/StockTest.java
+END
+MongoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/test/MongoTest.java
+END
+PropertiesDemo.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/test/PropertiesDemo.java
+END
+StockInfoServiceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/test/StockInfoServiceTest.java
+END
+DoubleTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/project/!svn/ver/25/StockAnalytics/src/com/stockanalytics/test/DoubleTest.java
+END
+LoggingTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/project/!svn/ver/4/StockAnalytics/src/com/stockanalytics/test/LoggingTest.java
+END
+ST.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/project/!svn/ver/26/StockAnalytics/src/com/stockanalytics/test/ST.java
+END
+URLTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/project/!svn/ver/22/StockAnalytics/src/com/stockanalytics/test/URLTest.java
+END

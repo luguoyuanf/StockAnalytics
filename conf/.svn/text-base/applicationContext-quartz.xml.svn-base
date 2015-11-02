@@ -1,0 +1,51 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd 
+		http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.2.xsd 
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-3.2.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
+
+	<!-- Quartz配置 -->
+ 	<!-- 使用MethodInvokingJobDetailFactoryBean，任务类可以不实现Job接口，通过targetMethod指定调用方法-->    
+    
+    <!-- =======定义目标bean和bean中的方法 ========-->  
+    <bean id="cronTaskJob" class="com.stockanalytics.timer.CronTask"/>  
+    <bean id="cronTaskJobMethod" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">  
+	    <property name="targetObject">  
+	        <ref bean="cronTaskJob"/>  
+	    </property>  
+		<!--   要执行的方法名称 -->  
+	    <property name="targetMethod"> 
+	        <value>execute</value>  
+	    </property>  
+	</bean>
+	
+	<!-- =========触发调度器========= -->
+	<bean id="cronTaskJobTriggerBean" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="cronTaskJobMethod"/>
+		</property>
+		<property name="cronExpression" >
+			<value>0 21 17 ? * MON-FRI</value>
+		</property>
+	</bean>  
+	
+	<!-- ==========调度工厂========= lazy-init="false" autowire="no"-->
+	<bean id="SpringJobSchedulerFactoryBean" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<!-- 这里面可添加多个触发器 -->
+				<!-- <ref bean="cronTaskJobTriggerBean" /> -->
+				<ref bean="cronTaskJobTriggerBean" />
+			</list>
+		</property>
+	</bean>
+</beans>
